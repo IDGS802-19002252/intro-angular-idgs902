@@ -1,22 +1,28 @@
+<!-- <div>
+  <h1>{{title}}</h1>
+</div>
+
+<div class="">La suma de 2 + 2 es: {{duplica(2)}}</div>
+
+<ul>
+  <li> {{alumno.matricula|number}} </li>
+  <li> {{alumno.nombre|uppercase}} </li>
+  <li> {{alumno.apaterno|uppercase}} </li>
+  <li [style]="alumno.inscrito ? 'color: blue;' : 'color: red;'"> {{alumno.inscrito ? 'Inscrito' : 'No inscrito'}} </li>
+  <li> {{alumno.fechaNac|date:'dd-MM-yy' }} </li>
+  <li> {{alumno.ingresos|currency }} </li>
+</ul>
+<hr>
+<app-grupos></app-grupos>
+<hr>
+<app-idgs></app-idgs>
+<hr>
+<app-otro-idgs></app-otro-idgs>
+<hr> -->
+<app-menu></app-menu>
 <div class="container">
-  <div>
-    <h1>{{title}}</h1>
+  <div class="row">
+    <!-- <app-iric></app-iric> -->
+    <app-suma></app-suma>
   </div>
-  
-  <div class="">La suma de 2 + 2 es: {{duplica(2)}}</div>
-  
-  <ul>
-    <li> {{alumno.matricula|number}} </li>
-    <li> {{alumno.nombre|uppercase}} </li>
-    <li> {{alumno.apaterno|uppercase}} </li>
-    <li [style]="alumno.inscrito ? 'color: blue;' : 'color: red;'"> {{alumno.inscrito ? 'Inscrito' : 'No inscrito'}} </li>
-    <li> {{alumno.fechaNac|date:'dd-MM-yy' }} </li>
-    <li> {{alumno.ingresos|currency }} </li>
-  </ul>
-  <hr>
-  <app-grupos></app-grupos>
-  <hr>
-  <app-idgs></app-idgs>
-  <hr>
-  <app-otro-idgs></app-otro-idgs>
 </div>
