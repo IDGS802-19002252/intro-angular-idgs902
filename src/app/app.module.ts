@@ -8,11 +8,12 @@ import { IDGSComponent } from './utl/idgs902.component';
 import { OtroIdgsComponent } from './utl/otro-idgs/otro-idgs.component';
 import { IricComponent } from './utl/iric/iric.component';
 import { MenuComponent } from './utl/menu/menu.component';
-import { FormsModule } from '@angular/forms';
 import { SumaComponent } from './utl/formulario/suma/suma.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { OperasBasComponent } from './utl/formulario/operas-bas/operas-bas.component';
-import {MatInputModule} from '@angular/material/input';
+import { OperasModule } from './utl/formulario/operas/operas.module';
+import { FormsModule } from '@angular/forms';
+import { TareaModule } from './tarea/tarea.module';
+
 
 @NgModule({
   declarations: [
@@ -23,14 +24,15 @@ import {MatInputModule} from '@angular/material/input';
     IricComponent,
     MenuComponent,
     SumaComponent,
-    OperasBasComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
     BrowserAnimationsModule,
-    MatInputModule
+    FormsModule,
+    
+    OperasModule,
+    TareaModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
